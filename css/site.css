@@ -16,26 +16,32 @@ body{
 
 .navbar{
 	border-radius: 0 !important;
+	position: relative;
 }
 .navbar-inverse .navbar-nav li a , .navbar-header a{
     padding: 30px 23px;
     font-size:1.3em;
+    margin:0 120px !important;
     transition: all 250ms;
 }
 .navbar .navbar-nav li a:hover , .navbar-nav li.active > a{
-  	color:black !important;
-  	background-color: gold !important;
+	background-color: transparent !important;
+  	border-bottom:2px solid gold !important;
+}
+.navbar-brand {
+	position: absolute !important;
+	left:50% !important;
+	margin-left: -50px !important;
+	display:block !important;
 }
 .logo{
-	height: 50px;
-	width: 50px;
-	margin-left:80px;
+	height: 100px;
+	width: 100px;
 	transition: transform 500ms;
 }
 .logo:hover{
 	transform: rotate(360deg);
 }
-
 .h1-right-text{
 	margin-top: 200px;
 	font-size: 5.5em;
@@ -55,6 +61,8 @@ body{
 	height: 20px;
 	width: 45px;
 	margin: 25px;
+	position:relative;
+	top:55px;
 	transition: 500ms;
 }
 .arrow-down:hover{
