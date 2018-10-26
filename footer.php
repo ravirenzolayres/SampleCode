@@ -7,11 +7,13 @@
 
     <!-- CDN BOOTSTRAP JS -->
     <script src="js/bootstrap.min.js"></script>
-
+			
+	<script src="js/loaders.css.js"></script>
     <!--FONTAWESOME -->
     <script src="https://use.fontawesome.com/42b3288fa8.js"></script> 
 
 	<script src="js/revealElements.js"></script>
+	<script src="js/preloader.js"></script>
 
 </body>
 

@@ -1,10 +1,9 @@
 /*MEDIA QUERIES */
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
-
 /* CLASSES SELECTOR */
 .padding{
-	padding:30px 0;
+	padding:10px 0;
 }
 .logo{
 	height: 30px;
@@ -16,14 +15,14 @@
 	font-size: 3em;
 	text-align: center;
 	position: relative;
-	top:50px;
+	top:-5px;
 }
 .h2-right-text{
 	margin-top: 20px;
 	font-size:1.5em;
 	text-align: center;
 	position: relative;
-	top:60px;
+	top:-5px;
 }
 .section-text{
 	font-size: 2.1em;
@@ -46,23 +45,25 @@
 .form-horizontal, .form-group{
 	margin:2% 1% !important;
 }
-.messageField{
-	height:100px !important;
-
-}
-
-.myBtn{
-	margin:10px auto;
-}
+.messageField{height:100px !important;}
+.myBtn{margin:10px auto;}
 .follow-text{
 	font-size:1.2em;
 	font-family: 'Kalam';
 	position:relative;
-	top:250px;
+	top:-40px;
 }
-
-
-
+.arrow-down{
+	position:relative;
+	top:50%;
+}
+.name-text{
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+.filler{
+	height: 400px !important;
+}
 
 /*ID SELECTOR */
 
@@ -73,10 +74,12 @@
 	border: 1px solid black;
 	border-radius: 50%;
 	position:relative;
-	top:40px;
+	top:0px;
 }
 #home{
 	overflow: hidden !important;
+	display: flex;
+	flex-direction: column;
 }
 #contact{
 	background-position: center center;
@@ -90,20 +93,18 @@
 }
 #about .summary-text{
 	position: relative;
-	top:-100px;
+	top:10px;
+	text-align: justify;
 }
 #about .fa{
 	font-size: 2.3em !important;
 	text-align: center;
 	position: relative;
-	top:280px;
+	top:-10px;
 	margin:5px auto !important;
-	left:30px;
 }
 #about .fa:hover{
 	color:gold;
 	text-align: center;
 }
-
-
 }

@@ -10,38 +10,50 @@ html,body{
 	width: 100%;
 }
 body{
-	overflow-x: hidden;
+	overflow-x: hidden !important;
+	background-color:#d5d5d5 !important;
 }
 /* CLASSES SELECTOR */
-
+.preloader{
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index: 1000;
+}
+.line-scale-pulse-out > div{
+	background-color:gold !important;
+	height:80px !important;
+	width: 10px !important;
+	position:relative;
+	top:-20px !important;
+	left:-30px !important;
+}
 .navbar{
 	border-radius: 0 !important;
-	position: relative;
 }
 .navbar-inverse .navbar-nav li a , .navbar-header a{
     padding: 30px 23px;
     font-size:1.3em;
-    margin:0 120px !important;
     transition: all 250ms;
 }
 .navbar .navbar-nav li a:hover , .navbar-nav li.active > a{
-	background-color: transparent !important;
-  	border-bottom:2px solid gold !important;
+  	color:black !important;
+  	background-color: gold !important;
 }
-.navbar-brand {
-	position: absolute !important;
-	left:50% !important;
-	margin-left: -50px !important;
-	display:block !important;
+.navbar-transparent{
+	background:transparent !important;
+	border:0 !important;
 }
 .logo{
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
+	margin-left:80px;
 	transition: transform 500ms;
 }
 .logo:hover{
 	transform: rotate(360deg);
 }
+
 .h1-right-text{
 	margin-top: 200px;
 	font-size: 5.5em;
@@ -61,8 +73,6 @@ body{
 	height: 20px;
 	width: 45px;
 	margin: 25px;
-	position:relative;
-	top:55px;
 	transition: 500ms;
 }
 .arrow-down:hover{
@@ -73,12 +83,14 @@ body{
 	padding: 150px 0 150px 0;
 }
 .padding-top{
-	padding: 80px 0 0 0;
+	padding:30px 0 0 0;
 }
 .section-text{
 	font-size: 3em;
 	font-family: 'Montserrat';
 	font-weight: bold;
+	letter-spacing: 10px;
+	text-transform: uppercase;
 }
 .follow-text{
 	font-size:1.5em;
@@ -118,28 +130,35 @@ body{
 .filler{
 	background:url("../img/bgfixed.jpg") no-repeat center center fixed;
 	background-size: cover;
-	height: 50%;
+	height: 100%;
 	width: 100%;
-	display: table;
 	margin: 0;
 	overflow: hidden;
 }
 .messageField{
 	height:100px !important;
-
 }
-
-
+.name-text{
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.mt-50{margin-top:50px;}
+.fs-10{font-size:10px;}
+.fs-18{font-size:18px;}
+.fs-20{font-size:20px;} 
+.fs-30{font-size:30px;} 
+.fs-40{font-size:40px;}
+.lighter-text{font-weight: lighter;}
+.bold-text{font-weight: bold;}
 
 /*ID SELECTOR */
 #home{
 	background:url("../img/bg.jpg") no-repeat center center fixed;
 	background-size: cover;
-	height: 100%;
 	width: 100%;
-	display: table;
 	margin: 0;
-	overflow: hidden;
+	display:table;
 }
 #contact
 {	background: url("../img/bgcontact.jpg") no-repeat center left fixed;

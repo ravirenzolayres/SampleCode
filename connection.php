@@ -1,12 +1,6 @@
 <?php
-	
-	$serverName = "localhost";
-	$user = "root";
-	$password = "";
-	$dbName = "dbInquiry";
 
-
-	$con = mysqli_connect($serverName,$user,$password,$dbName);
+	$con = mysqli_connect("localhost","root","","portfolio");
 	
 	if (!$con)
 	{

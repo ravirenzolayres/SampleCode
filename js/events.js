@@ -7,14 +7,6 @@
             }, 1000, 'linear');
         });
 });
-
-//ARROW DOWN SECTION //
-$(function(){
-	$('.arrow-down').hover(function(){
-		
-	});
-});
-
 // RRGO LOGO SECTION //
 $(function(){
     $('.navbar-nav li').click(function(){
@@ -23,13 +15,16 @@ $(function(){
     });
 });
 
-
 // HOME SECTION //
 $(function(){
 	$(window).scroll(function(){
 		if ($(document).scrollTop() > 0){
 			$('.navbar-nav li').removeClass('active');
 			$('#navHome').addClass('active');
+			$('nav').removeClass('navbar-transparent');
+		}
+		else{
+			$('nav').addClass('navbar-transparent');
 		}
 	});
 });
@@ -39,7 +34,7 @@ $(function(){
 	$(window).scroll(function(){
 		if ($(document).scrollTop() > 615){
 			$('.navbar-nav li').removeClass('active');
-			$('#navExpertise').addClass('active');
+			$('#navAbout').addClass('active');
 		}
 	});
 });
@@ -61,37 +56,6 @@ $(function(){
 			$('.navbar-nav li').removeClass('active');
 			$('#navContact').addClass('active');
 		}	
-	});
-});
-
-
-// ABOUT SECTION //
-$(function(){
-	$(window).scroll(function(){
-		if($(document).scrollTop() > 2980){
-			$('.navbar-nav li').removeClass('active');
-			$('#navAbout').addClass('active');
-		}	
-	});
-});
-
-// MODAL SECTION //
-
-$(function(){
-	$("#update").click(function(){
-		var modal = document.getElementById('modalUpdate').style.display = 'flex'; 
-	});
-});
-
-$(function(){
-	$("btnX").click(function(){
-		var modal = document.getElementById('modalUpdate').style.display = 'none'; 
-	});
-});
-
-$(function(){
-	$(".modalContainer").click(function(){
-		var modal = document.getElementsByClassName('modalContainer').style.display = 'none'; 
 	});
 });
 

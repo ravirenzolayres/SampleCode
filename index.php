@@ -3,6 +3,11 @@
 	include 'connection.php';
 ?>
 
+<div class="preloader">
+	<div class="loader-inner line-scale-pulse-out"></div>
+</div>
+
+<main>
 <section id="home" class="landing-page">
 
 	<?php include'nav.php';?>
@@ -20,9 +25,9 @@
 				</div>
 			</div>
 
-			<div class="row padding-top">
+			<div class="row">
 				<div class="col-sm-12 col-xs-12 text-center">
-					<a href="#about"><img class="arrow-down" src="img/arrow-down.png" alt="arrow-down"></a>
+					<a href="#about"><img id="arrow-down" class="arrow-down" src="img/arrow-down.png" alt="arrow-down"></a>
 				</div>
 			</div>
 		</div>
@@ -34,23 +39,23 @@
 <section id="about" class="padding">
 	<div class="container">
 		<div class="row text-center">
-			<div class="col-sm-offset-7 col-sm-5 col-xs-12">
-					<h1 class="section-text">About</h1>
+			<div class=" col-sm-12 col-xs-12">
+					<h1 class="section-text text-center">About</h1>
 			</div>
 		</div>
 
 		<div class="row text-center">
-			<div class="col-sm-6 col-xs-12 text-center">
-				<p class="follow-text">You can follow me on</p>
-					<a href="https://web.facebook.com/renz.olayres" target="_blank"><i class="fa fa-facebook"></i></a>
-					<a href="https://twitter.com/iamrenz8" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a href="https://www.instagram.com/iamrenz8" target="_blank"><i class="fa fa-instagram"></i></a>
+			<div class="col-sm-7 col-xs-12">
+				<h1 class="name-text mt-50 text-center">Ravi Renz G. Olayres</h1>
+				
+				<p class="summary-text">I love to code and design. I want to make things more convenient to everyone.I studied at STI College Ortigas - Cainta where i graduated on May 2018 with a degree in Information Technology.</p>
 			</div>
 
-			<div class="col-sm-6 col-xs-12 padding-top">
-				<p class="summary-text">
-					Hi Good day, I am Ravi Renz G. Olayres, 22 years old and a Web Developer/Designer based on Manila, Philippines. I love to code and design. I want to make things more convenient to everyone.I studied at STI College Ortigas - Cainta where i graduated with a degree in Information Technology.
-				</p>
+			<div class="col-sm-5 col-xs-12 padding-top">
+				<p class="follow-text">You can follow me on</p>
+				<a href="https://web.facebook.com/renz.olayres" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/iamrenz8" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/iamrenz8" target="_blank"><i class="fa fa-instagram"></i></a>
 			</div>
 		</div>
 
@@ -175,6 +180,7 @@
 		</div>
 	</div>
 </section>
+</main>
 
 <?php
 	include 'footer.php';
